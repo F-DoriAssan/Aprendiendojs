@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Icono de pestaña-->
+    <link rel="icon" href="img/favicon_casa8 (1).png">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+    html {
+        min-height: 100%;
+    }
+</style>
+
+<body>
+    
+    <!--Navegador-->
+    <link rel="stylesheet" href="css/style.css">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="img_nav" href="http://127.0.0.1:5500/index.html?#"></a>
+            <a class="navbar-brand titulo_nav" href="http://127.0.0.1:5500/index.html?#">APRENDIENDO JAVA COMO UN
+                CAMPEON!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <nav id="botonera_navegacion">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/traductor.html">Traductor</a></li>
+                <li><a href="http://127.0.0.1:5500/calcular.html?#">Calcular</a></li>
+                <li><a href="http://127.0.0.1:5500/impresion.html?#">Impresión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Titulo-->
+    <legend>
+        <h3> Calcular</h3>
+    </legend>
+    <div>
+        <p class="dd">Ingrese el tamaño del lado: </p>
+    </div>
+
+    <!--Input(entrada de datos)-->
+    <div class="contenedor">
+        <div class="div_padre">
+            <h3> Perimetro (lado*4) <br> Area (lado*lado)</h3>
+            <div id="nuevo">
+                <label for="lb_lado">Lado: </label>
+                <input type="number" name="txt_lado" id="txt_lado" class="form-control" maxlength="4"
+                    onkeypress="return verificar(event)"
+                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);multiplicacion(this.value);"
+                    laceholder="Dejar N° lado a calcular" required /><i>(Máximo
+                    4 dígitos)</i>
+                <!--Salida de datos-->
+                <h3 id="resultado_perimetro"></h3>
+                <h3 id="resultado_area"></h3>
+            </div>
+            </div>
+
+        </div>
+
+    <!--Conexion JavaScrip-->
+    <script src="js/calcular.js"></script>
+</body>
+
+</html>

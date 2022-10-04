@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Icono de pestaña-->
+    <link rel="icon" href="img/favicon_casa8 (1).png">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+    html {
+        min-height: 100%;
+    }
+</style>
+
+<body>
+    <!--Navegador-->
+    <link rel="stylesheet" href="css/style.css">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="img_nav" href="http://127.0.0.1:5500/index.html?#"></a>
+            <a class="navbar-brand titulo_nav" href="http://127.0.0.1:5500/index.html?#">APRENDIENDO JAVA COMO UN
+                CAMPEON!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+
+        <nav id="botonera_navegacion">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/traductor.html">Traductor</a></li>
+                <li><a href="http://127.0.0.1:5500/calcular.html?#">Calcular</a></li>
+                <li><a href="http://127.0.0.1:5500/impresion.html?#">Impresión</a></li>
+            </ul>
+        </nav>
+    </nav>
+    </header>
+
+    <!--Titulo-->
+    <legend>
+        <h3> Traductor</h3>
+    </legend>
+    <div>
+        <p class="dd">Ingrese unas de estas palabras: </p>
+    </div>
+
+    <!--Input (Ingreso de datos)-->
+    <div class="contenedor">
+        <div class="div_padre">
+            <label for="lb_palabra">
+                <h3> Casa <br> Perro <br> Mesa <br> Gato </h3>
+            </label>
+            
+        <div id="nuevo" class="nuevo">
+            <textarea id="id_txt_palabra" placeholder="Deja una palabra" size="40" maxlength="5"
+            onkeypress="return validar(event)"></textarea autofocus>
+        </div>
+        <div>
+            <button id="btn_traducir" class="btn_traducir" onclick="guardarVariable()">TRADUCIR</button>
+        </div>
+    <!--Salida datos-->
+        <h3 id="resultado"></h3>
+        </div>
+    </div>
+
+    </fieldset>
+    <!--Conexion JavaScrip-->
+    <script src="js/traductor.js"></script>
+</body>
+
+</html>
