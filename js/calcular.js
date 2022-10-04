@@ -24,3 +24,4 @@ function multiplicacion(){
     var resultado_area_multiplicacion = (txt_lado.value * txt_lado.value)  
     resultado_area.innerHTML = "El area total es: "+ resultado_area_multiplicacion
 }
+

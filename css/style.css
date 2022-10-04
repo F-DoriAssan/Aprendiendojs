@@ -18,6 +18,9 @@ p {
   font-family: 'Merriweather', serif;
   color: #e2e2e2;
 }
+html{
+  background-color: rgb(0, 0, 0);
+}
     /*ESTILO DEL BODY*/
 body {
     
